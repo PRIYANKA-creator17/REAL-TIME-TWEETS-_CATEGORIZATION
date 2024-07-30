@@ -21,8 +21,8 @@ This repository contains a project for real-time categorization of traffic-relat
    - Removal of stop words, hashtags, mentions, and URLs.
 
 3. **Model Training:**
-   - Supervised learning models (e.g., SVM, Random Forest) for tweet categorization.
-   - Training and validation on labeled datasets.
+   - Supervised learning models (e.g., SVM, Naive Bayes Classifier, Decision Tree) for initial tweet categorization.
+   - Advanced model training using Long Short-Term Memory (LSTM) networks.
 
 4. **Real-Time Processing:**
    - Integration with a streaming platform (e.g., Apache Kafka) for real-time data ingestion.
@@ -31,6 +31,20 @@ This repository contains a project for real-time categorization of traffic-relat
 5. **Dashboard:**
    - Interactive dashboard built with tools like Power BI or Tableau.
    - Visual representation of categorized tweets and traffic patterns.
+
+## Handling Sequences with LSTM
+
+While initial models like SVM, Naive Bayes Classifier, and Decision Tree are used for basic tweet categorization, the project also employs LSTM networks to leverage the sequential nature of tweet data. Here are the advantages of using LSTM:
+
+- **Handling Sequences:** LSTM models can capture the sequential nature of text data more effectively than SVM.
+- **Context Understanding:** LSTMs can maintain context over long sequences, making them suitable for understanding nuanced patterns in text.
+- **Feature Learning:** Unlike SVM, which relies on predefined features (TF-IDF), LSTMs can learn features directly from the raw text data.
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/real-time-traffic-tweet-categorization.git
 
 ## Installation
 
